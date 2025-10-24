@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:image" content="https://tanhpika.github.io/htmlcss-project-5/assets/img/preview.png" />
+        <title>Anhpika Personal Portfolio Website</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+
+        <!-- Library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- PC Header -->
+        <header class="header fixed">
+            <div class="container-header">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <div class="header__mail">
+                            <div class="header__mail-wrap">
+                                <img src="./assets/img/mail.svg" alt="" class="header__mail-img" />
+                            </div>
+
+                            <p class="header__mail-desc">hi@arif.interactive</p>
+                        </div>
+
+                        <!-- Logo -->
+                        <a href="#"><img class="logo" src="./assets/img/logo.svg" alt="Logo" class="logo" /></a>
+
+                        <!-- Navbar -->
+                        <nav class="navbar">
+                            <!-- Tablet/mobile menu icon -->
+                            <label for="menu-checkbox" class="toggle-menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        fill="currentColor"
+                                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                                    />
+                                </svg>
+                            </label>
+
+                            <ul id="pc-nav" class="navbar__list">
+                                <li class="navbar__item">
+                                    <!-- <a href="#" class="navbar__link navbar__link--active">Home</a> -->
+                                    <a href="#" class="navbar__link">Projects</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#product" class="navbar__link">Journey</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#features" class="navbar__link">Service</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#blog" class="navbar__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tablet/mobile header -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#"><img src="./assets/img/logo.svg" alt="" /></a>
+
+                <!-- Navigation -->
+                <ul id="mobile-nav"></ul>
+
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    const menuCheckbox = document.querySelector("#menu-checkbox");
+
+                    // Copy from PC nav -> Mobile nav
+                    mobileNav.innerHTML = pcNav.innerHTML;
+
+                    // Khi click vào bất kỳ link nào (logo) trong mobile menu => tự tắt menu
+                    document.querySelectorAll(".menu-drawer a").forEach((link) => {
+                        link.addEventListener("click", () => {
+                            menuCheckbox.checked = false;
+                        });
+                    });
+                </script>
+            </div>
+        </header>
+
+        <main style="height: 5000px;">
+            <section class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="hero__inner">
+                            <div class="hero__left">
+                                <div class="hero__img-wrap">
+                                    <img src="./assets/img/hero-01.png" alt="" class="hero__img" />
+                                    <div class="hero__decor hero__decor-1">
+                                        <img src="./assets/img/hero-decor-1.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero__right">
+                                <h1 class="section-heading hero__heading">An Interactive Designer</h1>
+                                <p class="section-desc hero__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+
+                                <div class="hero__row">
+                                    <a href="#!" class="btn">Book a call</a>
+                                    <p class="hero__link">My Works</p>
+                                </div>
+
+                                <div class="hero__bottom">
+                                    <p class="hero__bottom-desc">Follow me on:</p>
+                                    <div class="hero__list">
+                                        <a href="#!">
+                                            <div class="hero__social">
+                                                <img src="./assets/icons/hero-icon-1.svg" alt="" />
+                                            </div>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="hero__social">
+                                                <img src="./assets/icons/hero-icon-2.svg" alt="" />
+                                            </div>
+                                        </a>
+                                        <a href="#!">
+                                            <div class="hero__social">
+                                                <img src="./assets/icons/hero-icon-3.svg" alt="" />
+                                            </div>
+                                        </a>
+
+                                        <div class="hero__decor hero__decor-2">
+                                            <img src="./assets/img/hero-decor-2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clients">
+                <div class="container">
+                    <div class="row">
+                        <div class="clients__left"></div>
+                        <div class="clients__right"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="special">
+                <div class="container">
+                    <div class="row">
+                        <div class="special__top"></div>
+                    </div>
+
+                    <div class="row-cols-lg-3">
+                        <div class="col">
+                            <div class="special__item-1"></div>
+                        </div>
+                        <div class="col">
+                            <div class="special__item-2"></div>
+                        </div>
+                        <div class="col">
+                            <div class="special__item-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="container">
+                    <div class="row">
+                        <div class="project__top"></div>
+                    </div>
+
+                    <div class="row-cols-lg-2">
+                        <div class="col">
+                            <div class="project__item-1"></div>
+                        </div>
+                        <div class="col">
+                            <div class="project__item-2"></div>
+                        </div>
+                        <div class="col">
+                            <div class="project__item-3"></div>
+                        </div>
+                        <div class="col">
+                            <div class="project__item-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="journey">
+                <div class="container">
+                    <div class="row">
+                        <div class="journey__top"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="journey__details"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="journey__video"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comment -->
+            <section class="comment">
+                <div class="row">
+                    <div class="col">
+                        <div class="comment__inner">
+                            <div class="comment__top" data-aos="fade-up">
+                                <p class="section-label"></p>
+                                <h2 class="section-heading"></h2>
+                                <p class="section-desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment__body comment-wrapper swiper">
+                        <div class="comment__list swiper-wrapper">
+                            <!-- Comment Item 1 -->
+                            <div class="comment__item swiper-slide"></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="container">
+                    <div class="row"></div>
+                </div>
+            </section>
+
+            <section class="atmosphere">
+                <div class="container">
+                    <div class="row">
+                        <div class="atmosphere__top"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="atmosphere__item-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="container">
+                    <div class="row">
+                        <div class="project__top"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner"></div>
+            </div>
+        </footer>
+
+        <footer class="footer">
+            <div class="footer__inner"></div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            window.addEventListener("load", () => {
+                if (window.innerWidth >= 992) {
+                    // Desktop
+                    AOS.init({
+                        duration: 1000,
+                    });
+                } else {
+                    // Mobile, tablet: off animation
+                    AOS.init({
+                        // disable: true,
+                    });
+                }
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const comment = new Swiper(".comment-wrapper", {
+                slidesPerView: 2, // Số lượng slide hiển thị
+                spaceBetween: 30, // Khoảng cách giữa các slide
+                speed: 1000,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000, // 3 giây tự động chuyển slide
+                    disableOnInteraction: false, // Không dừng autoplay khi người dùng tương tác
+                },
+                loop: true, // Cho phép quay vòng vô hạn
+
+                // Responsive for tablet and mobile
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>
