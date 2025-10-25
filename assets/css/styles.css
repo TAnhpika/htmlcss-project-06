@@ -487,3 +487,105 @@ p {
 .project__bottom {
     margin: 80px auto 86px;
 }
+
+/* Journey */
+.journey {
+    margin-top: var(--section-spacing);
+}
+
+.journey__top {
+    margin: 0 auto;
+}
+
+.journey__label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    text-align: center;
+    justify-content: center;
+}
+
+.journey__label-desc {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+
+.journey__details-wrap {
+    position: relative;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0804151a;
+}
+
+.journey__details-wrap::before {
+    content: "";
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    height: 1px;
+    background: #0804151a;
+}
+
+.journey__details {
+    margin-top: 70px;
+    height: auto;
+}
+
+.journey__details-num {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.36; /* 135.714% */
+    letter-spacing: 1.68px;
+    text-decoration-line: underline;
+}
+
+.journey__details-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.journey__video {
+    position: relative;
+}
+
+.journey__video video {
+    margin-top: 70px;
+    height: 628px;
+    object-fit: cover;
+}
+
+.video__intro {
+    position: absolute;
+    bottom: 10px;
+    right: 31px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.video__intro:hover {
+    opacity: 0.9;
+    background: #fff;
+}
+
+.video__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 111px;
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 111px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
