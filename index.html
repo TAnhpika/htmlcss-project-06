@@ -417,7 +417,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="comment__body comment-wrapper swiper">
+                            <div class="comment__body comment-swiper swiper">
                                 <div class="comment__list swiper-wrapper">
                                     <!-- Comment Item 1 -->
                                     <div class="comment__item swiper-slide">
@@ -590,16 +590,30 @@
                 </div>
             </section>
 
-            <section class="atmosphere">
+            <!-- Gallery -->
+            <section class="gallery">
                 <div class="container">
                     <div class="row">
-                        <div class="atmosphere__top"></div>
+                        <div class="gallery__top">
+                            <h2 class="section-heading--center">My atmosphere</h2>
+                            <p class="section-desc--center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                            <a href="#!" class="gallery__link">@interaction_arif</a>
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <div class="atmosphere__item-1"></div>
+                    <div class="gallery__body gallery-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/gallery-1.png" alt="" class="gallery__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/gallery-2.png" alt="" class="gallery__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/gallery-3.png" alt="" class="gallery__img">
+                            </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -620,30 +634,18 @@
             </div>
         </footer>
 
-        <footer class="footer">
-            <div class="footer__inner"></div>
-        </footer>
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             window.addEventListener("load", () => {
-                if (window.innerWidth >= 992) {
-                    // Desktop
-                    AOS.init({
-                        duration: 1000,
-                    });
-                } else {
-                    // Mobile, tablet: off animation
-                    AOS.init({
-                        // disable: true,
-                    });
-                }
+                AOS.init({
+                    duration: 1000,
+                });
             });
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
-            const comment = new Swiper(".comment-wrapper", {
+            const comment = new Swiper(".comment-swiper", {
                 slidesPerView: 1, // Số lượng slide hiển thị
                 spaceBetween: 0, // Khoảng cách giữa các slide
                 speed: 1000,
@@ -656,10 +658,35 @@
                     clickable: true,
                 },
                 autoplay: {
-                    delay: 10000, // 3 giây tự động chuyển slide
-                    disableOnInteraction: false, // Không dừng autoplay khi người dùng tương tác
+                    delay: 4000, 
+                    disableOnInteraction: false, 
                 },
-                loop: true, // Cho phép quay vòng vô hạn
+                loop: true,
+            });
+
+            const gallery = new Swiper(".gallery-swiper", {
+                slidesPerView: 3, 
+                spaceBetween: 30, 
+                speed: 1000,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false, 
+                },
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
             });
         </script>
     </body>
