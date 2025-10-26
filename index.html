@@ -604,13 +604,13 @@
                     <div class="gallery__body gallery-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery-1.png" alt="" class="gallery__img">
+                                <img src="./assets/img/gallery-1.png" alt="" class="gallery__img" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery-2.png" alt="" class="gallery__img">
+                                <img src="./assets/img/gallery-2.png" alt="" class="gallery__img" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/gallery-3.png" alt="" class="gallery__img">
+                                <img src="./assets/img/gallery-3.png" alt="" class="gallery__img" />
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -618,11 +618,27 @@
                 </div>
             </section>
 
-            <section class="contact">
+            <!-- CTA -->
+            <section class="cta">
                 <div class="container">
-                    <div class="row">
-                        <div class="contact__top"></div>
+                    <div class="contact__top">
+                        <div class="cta__icon">
+                            <img src="./assets/icons/cta-icon.svg" alt="" />
+                        </div>
+                        <h2 class="section-heading--center">Got a project? Let’s talk</h2>
+                        <p class="section-desc--center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <a href="#!" class="btn cta__btn">Book a call</a>
                     </div>
+                </div>
+
+                <div class="decor cta__decor-1">
+                    <img src="./assets/img/decor-small.svg" alt="">
+                </div>
+                <div class="decor cta__decor-2">
+                    <img src="./assets/img/cta-bg-img.svg" alt="">
+                </div>
+                <div class="decor cta__decor-3">
+                    <img src="./assets/img/cta-bg-img-2.svg" alt="">
                 </div>
             </section>
         </main>
@@ -658,15 +674,15 @@
                     clickable: true,
                 },
                 autoplay: {
-                    delay: 4000, 
-                    disableOnInteraction: false, 
+                    delay: 4000,
+                    disableOnInteraction: false,
                 },
                 loop: true,
             });
 
             const gallery = new Swiper(".gallery-swiper", {
-                slidesPerView: 3, 
-                spaceBetween: 30, 
+                slidesPerView: 3,
+                spaceBetween: 30,
                 speed: 1000,
                 pagination: {
                     el: ".swiper-pagination",
@@ -674,7 +690,7 @@
                 },
                 autoplay: {
                     delay: 4000,
-                    disableOnInteraction: false, 
+                    disableOnInteraction: false,
                 },
                 loop: true,
                 breakpoints: {
@@ -686,7 +702,7 @@
                         slidesPerView: 3,
                         spaceBetween: 30,
                     },
-                }
+                },
             });
         </script>
     </body>

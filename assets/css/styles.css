@@ -117,8 +117,8 @@ p {
 .section-desc--center,
 .section-heading--center {
     text-align: center;
-    /* display: block;
-    margin: 0 auto; */
+    display: block;
+    margin: 0 auto;
 }
 
 .section-desc--center,
@@ -833,3 +833,42 @@ p {
     height: 529px;
     object-fit: cover;
 }
+
+/* CTA */
+.cta {
+    position: relative;
+    margin: 140px auto;
+    padding: 68px 0 68px;
+    background: #FBFAFF;
+    width: 1330px;
+    max-width: calc(100% - 48px);
+    overflow: hidden;
+}
+
+.contact__top {
+    text-align: center;
+}
+
+.cta__icon {
+    margin-bottom: 30px;
+}
+
+.cta__btn {
+    margin-top: 45px;
+}
+
+.cta__decor-1 {
+    left: -150px;
+    bottom: 0;
+}
+
+.cta__decor-2 {
+    top: 0;
+    left: 19%;
+}
+
+.cta__decor-3 {
+    right: 0;
+    top: 0;
+}
+
