@@ -51,12 +51,6 @@ p {
     color: var(--text-color);
 }
 
-/* .container {
-    overflow-x: hidden;
-    overflow-y: visible;
-    overflow: hidden;
-} */
-
 .btn {
     --height: 62px;
     --width: 170px;
@@ -191,8 +185,14 @@ p {
 }
 .header {
     padding-top: 10px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+.header.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
 .header__inner {
     position: relative;
     display: flex;
@@ -200,17 +200,6 @@ p {
     justify-content: space-between;
     padding: 16px 0;
 }
-
-/* .header__inner::after {
-    content: "";
-    display: inline-block;
-    background: url(../img/logo.svg) center / cover;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-} */
 
 .header__logo-wrap {
     display: flex;

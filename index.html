@@ -421,6 +421,7 @@
                                 const video = document.querySelector(".journey__video video");
                                 const playBtn = document.querySelector(".video__btn");
                                 const introBtn = document.querySelector(".video__intro");
+                                const header = document.querySelector(".header");
 
                                 function hideControls() {
                                     playBtn.style.visibility = "hidden";
@@ -435,12 +436,14 @@
                                 playBtn.addEventListener("click", () => {
                                     video.play();
                                     hideControls();
+                                    header.classList.add("hide");
                                 });
 
                                 // Click to play
                                 introBtn.addEventListener("click", () => {
                                     video.play();
                                     hideControls();
+                                    header.classList.add("hide");
                                 });
 
                                 // Pause
@@ -448,9 +451,11 @@
                                     if (video.paused) {
                                         video.play();
                                         hideControls();
+                                        header.classList.add("hide");
                                     } else {
                                         video.pause();
                                         showControls();
+                                        header.classList.remove("hide");
                                     }
                                 });
                             </script>
