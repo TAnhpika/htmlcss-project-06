@@ -47,16 +47,16 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo-wrap">
-                        <a href="#!">
+                        <a href="mailto:hi@arif.interactive">
                             <div class="header__mail">
                                 <div class="header__mail-wrap">
                                     <img src="./assets/img/mail.svg" alt="" class="header__mail-img" />
                                 </div>
-    
+
                                 <p class="header__mail-desc hide-on-mt">hi@arif.interactive</p>
                             </div>
                         </a>
-    
+
                         <!-- Tablet/mobile menu icon -->
                         <label for="menu-checkbox" class="toggle-menu">
                             <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +66,9 @@
                         </label>
                     </div>
 
+                    <a href="#">
+                        <img class="logo" src="./assets/img/logo.svg" alt="" />
+                    </a>
                     <!-- Navbar -->
                     <nav class="navbar">
                         <ul id="pc-nav" class="navbar__list">
@@ -218,36 +221,43 @@
                         </div>
                     </div>
 
-                    <div class="service__body">
-                        <div class="row row-cols-lg-3 row-cols-md-3">
-                            <div class="col">
-                                <div class="service__item" data-aos="fade-up-right" data-aos-delay="100">
-                                    <div class="service__icon-wrap">
-                                        <img src="./assets/icons/service-icon-1.png" alt="" class="service__img" />
+                    <div id="service-swiper" class="service__body">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div data-aos="fade-up-right" data-aos-delay="100">
+                                    <div class="service__item">
+                                        <div class="service__icon-wrap">
+                                            <img src="./assets/icons/service-icon-1.png" alt="" class="service__img" />
+                                        </div>
+                                        <a href="#!"><h3 class="service__item-heading">Product design</h3></a>
+                                        <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                     </div>
-                                    <h3 class="service__item-heading">Product design</h3>
-                                    <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="service__item" data-aos="fade-up">
-                                    <div class="service__icon-wrap">
-                                        <img src="./assets/icons/service-icon-2.png" alt="" class="service__img" />
+                            <div class="swiper-slide">
+                                <div data-aos="fade-up">
+                                    <div class="service__item">
+                                        <div class="service__icon-wrap">
+                                            <img src="./assets/icons/service-icon-2.png" alt="" class="service__img" />
+                                        </div>
+                                        <a href="#!"><h3 class="service__item-heading">UI/UX Design</h3></a>
+                                        <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                     </div>
-                                    <h3 class="service__item-heading">UI/UX Design</h3>
-                                    <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="service__item" data-aos="fade-up-left" data-aos-delay="100">
-                                    <div class="service__icon-wrap">
-                                        <img src="./assets/icons/service-icon-3.png" alt="" class="service__img" />
+                            <div class="swiper-slide">
+                                <div data-aos="fade-up-left" data-aos-delay="100">
+                                    <div class="service__item">
+                                        <div class="service__icon-wrap">
+                                            <img src="./assets/icons/service-icon-3.png" alt="" class="service__img" />
+                                        </div>
+                                        <a href="#!"><h3 class="service__item-heading">Interactive design</h3></a>
+                                        <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                     </div>
-                                    <h3 class="service__item-heading">Interactive design</h3>
-                                    <p class="service__item-desc">Lorem ipsum dolor sit amet, solor adipiscing elit. Non nisl solor ut elementum turpis.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination show-on-mobile"></div>
                     </div>
                 </div>
             </section>
@@ -357,7 +367,7 @@
                         <div class="journey__top">
                             <div class="journey__label">
                                 <p class="journey__label-desc">Hey,,,,It’s Arif</p>
-                                <img src="./assets/icons/journey-icon-1.svg" alt="" class="journey__label" />
+                                <img src="./assets/icons/journey-icon-1.svg" alt="" class="journey__label-icon" />
                             </div>
 
                             <h2 class="section-heading--center">Interactive Designer</h2>
@@ -367,21 +377,21 @@
 
                     <div class="col-lg-10">
                         <div class="row journey__details-wrap">
-                            <div class="col-lg-2 offset-lg-1">
+                            <div class="col-lg-2 offset-lg-1 col-3">
                                 <div class="journey__details">
                                     <span class="journey__details-num">08+</span>
                                     <p class="journey__details-desc">Years Experience</p>
                                 </div>
                             </div>
 
-                            <div class="col-lg-2 offset-lg-1">
+                            <div class="col-lg-2 offset-lg-1 col-3">
                                 <div class="journey__details">
                                     <span class="journey__details-num">21+</span>
                                     <p class="journey__details-desc">Features & Awards</p>
                                 </div>
                             </div>
 
-                            <div class="col-lg-2 offset-lg-1">
+                            <div class="col-lg-2 offset-lg-1 col-3">
                                 <div class="journey__details">
                                     <span class="journey__details-num">97%</span>
                                     <p class="journey__details-desc">Clients Rating</p>
@@ -634,26 +644,27 @@
             <!-- Gallery -->
             <section class="gallery">
                 <div class="container">
-                        <div class="gallery__top">
-                            <h2 class="section-heading--center">My atmosphere</h2>
-                            <p class="section-desc--center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                            <a href="#!" class="gallery__link">@interaction_arif</a>
-                        </div>
+                    <div class="gallery__top">
+                        <h2 class="section-heading--center">My atmosphere</h2>
+                        <p class="section-desc--center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <a href="#!" class="gallery__link">@interaction_arif</a>
+                    </div>
 
-                    <div class="gallery__body gallery-swiper">
+                    <div id="gallery-swiper" class="gallery__body">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="gallery__img-wrap" data-aos="fade-up" data-aos-delay="600">
+                                <!-- Not use wraper -->
+                                <div data-aos="fade-up">
                                     <img src="./assets/img/gallery-1.png" alt="" class="gallery__img" />
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="gallery__img-wrap" data-aos="fade-up" data-aos-delay="300">
+                                <div data-aos="fade-up" data-aos-delay="300">
                                     <img src="./assets/img/gallery-2.png" alt="" class="gallery__img" />
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="gallery__img-wrap" data-aos="fade-up">
+                                <div data-aos="fade-up" data-aos-delay="600">
                                     <img src="./assets/img/gallery-3.png" alt="" class="gallery__img" />
                                 </div>
                             </div>
@@ -702,7 +713,9 @@
                                 <p class="header__mail-desc">hi@arif.interactive</p>
                             </div>
                         </a>
-
+                        <a href="#">
+                            <img class="logo logo--footer" src="./assets/img/logo.svg" alt="" />
+                        </a>
                         <!-- Navbar -->
                         <nav class="navbar">
                             <ul id="pc-nav" class="navbar__list navbar__footer">
@@ -770,7 +783,32 @@
                 loop: true,
             });
 
-            const gallery = new Swiper(".gallery-swiper", {
+            const service = new Swiper("#service-swiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                speed: 1000,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+            const gallery = new Swiper("#gallery-swiper", {
                 slidesPerView: 3,
                 spaceBetween: 30,
                 speed: 1000,
