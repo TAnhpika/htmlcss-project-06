@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /dang-ky.html
+Disallow: /dang-nhap.html
+Disallow: /abc/
+
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+Sitemap: https://tanhpika.github.io/htmlcss-project-06/sitemap.xml
