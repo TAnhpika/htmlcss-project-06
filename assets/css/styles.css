@@ -494,9 +494,6 @@ p {
     overflow: hidden;
 }
 
-.service__item-heading:hover {
-    text-decoration: underline;
-}
 .service__item-desc {
     margin-top: 15px;
     max-width: 285px;
@@ -1029,9 +1026,6 @@ p {
     color: #979aaa;
 }
 
-.footer__text:hover {
-    text-decoration: underline;
-}
 .footer__right {
     display: flex;
     align-items: center;
